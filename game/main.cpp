@@ -18,14 +18,7 @@
 #include <string>
 
 
-float angle=1.0;
-double yRotated = 0;
-double zRotated = 0;
-double xRotated = 0;
-int translateX1=0,translateY1=0;//input variables
-int translateX2=0,translateY2=0;//input variables
-double translateP=0;
-double translateH=0;
+
 
 
 void reshapeFunc (int w, int h)
