@@ -56,10 +56,14 @@ void addPlayer (int x, int y, int z, int tx, int ty)
 
 void addCoins (int x, int y, int z){//This method adds coins
 
-    
+    //glColor3f(0.3,1.0,1.0);
+
+    //glPushMatrix();
+
+    //glTranslatef(1.5,0.0,0.0);
 
     glutSolidTorus(x, y, z, 50);//coins items for players to pick up are made using torus shape
-  
+    //glPopMatrix();
 
 
 
@@ -133,6 +137,13 @@ void addPyramid(int x, int y, int z){//Drawing pyramid manually from scratch usi
     glEnd();
 
 }
+
+
+
+
+void display (void){//General display method where everything is called to display in the scene
+
+
 
 
 
@@ -329,4 +340,3 @@ int main (int argc, char **argv)
 
 
 }
-
