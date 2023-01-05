@@ -56,14 +56,10 @@ void addPlayer (int x, int y, int z, int tx, int ty)
 
 void addCoins (int x, int y, int z){//This method adds coins
 
-    //glColor3f(0.3,1.0,1.0);
-
-    //glPushMatrix();
-
-    //glTranslatef(1.5,0.0,0.0);
+    
 
     glutSolidTorus(x, y, z, 50);//coins items for players to pick up are made using torus shape
-    //glPopMatrix();
+  
 
 
 
@@ -137,26 +133,6 @@ void addPyramid(int x, int y, int z){//Drawing pyramid manually from scratch usi
     glEnd();
 
 }
-
-
-
-
-void display (void){//General display method where everything is called to display in the scene
-
-/*
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glColor3d(0.5,0.3,0.3);
-      glTranslated(0.0,10,-3);
-        glRotated(-90, 1.0, 0.0, 0.0);
-        glRotatef( xRotated,0, xRotated, 0);
-
-        glutSolidTorus(0.4, 0.8, 10, 50);
-
-
-        glTranslated(0.0,-1.2,-6);
-
-       glutSwapBuffers();
-       glEnd();*/
 
 
 
@@ -353,15 +329,4 @@ int main (int argc, char **argv)
 
 
 }
-/*
-static void resize(int width, int height)
-{
-    const float ar = (float) width / (float) height;
-    glViewport(0, 0, width, height);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glFrustum(-ar, ar, -1.0, 1.0, 2.0, 100.0);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity() ;
-}
-*/
+
